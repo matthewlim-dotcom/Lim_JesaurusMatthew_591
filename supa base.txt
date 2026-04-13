@@ -1,0 +1,3 @@
+url: https://vfvyjjkttzweoqhmzctx.supabase.co
+
+anonkey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZmdnlqamt0dHp3ZW9xaG16Y3R4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExNjY3MzIsImV4cCI6MjA4Njc0MjczMn0.vFaC_SxQOV3qMPsEHdmMLIZscNStio20AAFeYRs43Cw

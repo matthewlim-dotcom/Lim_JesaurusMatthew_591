@@ -1,0 +1,93 @@
+import 'package:flutter/material.dart';
+
+class BottomNavBar extends StatelessWidget {
+  const BottomNavBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return buildBottomAppBar();
+  }
+
+  BottomAppBar buildBottomAppBar() {
+    return BottomAppBar(
+    color: Colors.grey.shade100,
+    elevation: 10,
+    shadowColor: Colors.black,
+    shape: CircularNotchedRectangle(),
+    notchMargin: 10,
+    child: Row(
+      children: [
+        buildNavItem(
+          icon: Icons.newspaper,
+          label: 'News',
+
+        ),
+        buildNavItem(
+          icon: Icons.miscellaneous_services,
+          label: 'Services',
+
+        ),
+        Spacer(),
+        buildNavItem(
+          icon: Icons.account_circle,
+          label: 'My CPU',
+
+        ),
+        buildNavItem(
+          icon: Icons.settings,
+          label: 'Settings',
+
+        ),
+
+      ],
+    ),
+
+  );
+  }
+
+  InkWell buildNavItem({
+    required IconData icon,
+    required String label,
+
+  })
+       {
+    return InkWell(
+        onTap: (){},
+
+        child: Container(
+          width: 70,
+          child: Card(
+            color: Colors.blue,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(icon, color: Colors.white,),
+                Text(label, style: TextStyle(color: Colors.white),)
+              ],
+            ),
+          ),
+        ),
+      );
+  }
+
+  BottomNavigationBar buildBottomNavigationBar() {
+    return BottomNavigationBar(
+    type: BottomNavigationBarType.fixed,
+      backgroundColor: Colors.white,
+      elevation: 0,
+      items: [
+    BottomNavigationBarItem(
+        icon: Icon(Icons.newspaper),
+        label: 'News'),
+    BottomNavigationBarItem(
+        icon: Icon(Icons.miscellaneous_services),
+        label: 'Services'),
+    BottomNavigationBarItem(
+        icon: Icon(Icons.account_circle),
+        label: 'My CPU'),
+    BottomNavigationBarItem(
+        icon: Icon(Icons.settings),
+        label: 'Settings')
+  ]);
+  }
+}
