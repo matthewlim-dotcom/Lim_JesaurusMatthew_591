@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:modelhandling/screen/chat_screen.dart';
 import 'package:modelhandling/screen/product_screen.dart';
 import 'package:modelhandling/screen/student_screen.dart';
 import 'package:modelhandling/screen/student_screen_midterms.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Student Info Manager',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.blue)),
-      home: const StudentPage(),
+      home: const ChatPage(username: 'Matthew Lim'),
     );
   }
 }
